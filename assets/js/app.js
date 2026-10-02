@@ -1,7 +1,19 @@
+let randomNumber;
+let chances;
+function btnNewGame(){
+    Swal.fire({
+                title: "New Game",
+                text: "You started A New Game",
+                icon: "info"
+    });
+    randomNumber = Math.floor((Math.random()*10) +1);
+    chances = 3;
+}
+btnNewGame();
 function btnGuessOnAction() {
-    let randomNumber = Math.floor((Math.random()*10) +1);
-    let userInput = document.getElementById("txtUInput").value;
     
+    let userInput = document.getElementById("txtUInput").value;
+    let location = randomNumber > userInput?"Too Low":"Too High";
     if (randomNumber == userInput) {
             Swal.fire({
                 title: "Right !",
@@ -12,16 +24,24 @@ function btnGuessOnAction() {
     }else{
             Swal.fire({
                 title: "Wrong !",
-                text: "Right Answer Is  "+randomNumber+"\n"+"You still can guess more",
+                text: "The answer is "+location,
                 icon: "error"
             });
             
     }
     clearField();
+    chances--;
     
 }
 
 function clearField() {
     let inputField = document.getElementById("txtUInput");
     inputField.value = "";
+    if (chances == 0) {
+        Swal.fire({
+                title: "You Loose !",
+                text: "Right Answer Is  "+randomNumber+"\n"+"You still can play more",
+                icon: "error"
+        });
+    }
 }
