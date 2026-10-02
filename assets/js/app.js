@@ -21,6 +21,7 @@ function btnGuessOnAction() {
                 icon: "success"
             });
             
+            
     }else{
             Swal.fire({
                 title: "Wrong !",
