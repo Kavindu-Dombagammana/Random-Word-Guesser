@@ -12,10 +12,10 @@
     margin-left: 350px;
     
 }
-
-form{
-    
+body{
+    background-color: #52b69a;
 }
+
 #title{
     font-family: "Isometra", serif;
     font-weight: 300;
@@ -48,5 +48,10 @@ form{
     width: 200px;
     height: 50px;
     border-radius: 30px;
+    border-style: none;
 
+}
+#btnGuess:hover{
+    background-color: #277679;
+    font-size: 120%;
 }
