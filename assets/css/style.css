@@ -6,7 +6,7 @@
 #main_form{
     background-color: #1a759f;
     width: 800px;
-    height: 1250px;
+    height: 1100px;
     display:grid;
     justify-self: center;
     margin-left: 350px;
@@ -32,7 +32,6 @@ body{
     text-align: center;
 }
 #txtUInput{
-    margin-top: 150px;
     margin-left: 225px;
     text-align: center;
     height: 40px;
