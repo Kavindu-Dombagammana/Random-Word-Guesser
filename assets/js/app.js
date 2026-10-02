@@ -12,7 +12,7 @@ function btnGuessOnAction() {
     }else{
             Swal.fire({
                 title: "Wrong !",
-                text: "You still can guess more",
+                text: "Right Answer Is  "+randomNumber+"\n"+"You still can guess more",
                 icon: "error"
             });
             
