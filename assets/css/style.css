@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Isometra&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main_form{
+    background-color: #1a759f;
+    width: 800px;
+    height: 1250px;
+    display:grid;
+    justify-self: center;
+    margin-left: 350px;
+    
+}
+
+form{
+    
+}
+#title{
+    font-family: "Isometra", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    height: 50px;
+}
+#title1{
+    font-family: "Edu QLD Hand", cursive;
+    font-optical-sizing: auto;
+    font-weight: 10;
+    font-style: normal;
+    text-align: center;
+}
+#txtUInput{
+    margin-top: 150px;
+    margin-left: 225px;
+    text-align: center;
+    height: 40px;
+    width: 300px;
+
+}
+
+#btnGuess{
+    background-color: #34a0a4;
+    display: grid;
+    margin-top: 50px;
+    margin-left: 280px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+
+}
